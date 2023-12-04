@@ -1,0 +1,116 @@
+.arc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-animation: spin ease 1.4s infinite both;
+          animation: spin ease 1.4s infinite both;
+}
+.arc:nth-child(1) {
+  background: #E31D28;
+  width: 490px;
+  height: 490px;
+  margin-left: -245px;
+  margin-top: -245px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.arc:nth-child(2) {
+  background: #ED8C3D;
+  width: 420px;
+  height: 420px;
+  margin-left: -210px;
+  margin-top: -210px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.arc:nth-child(3) {
+  background: #FCD234;
+  width: 350px;
+  height: 350px;
+  margin-left: -175px;
+  margin-top: -175px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.arc:nth-child(4) {
+  background: #3E9965;
+  width: 280px;
+  height: 280px;
+  margin-left: -140px;
+  margin-top: -140px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.arc:nth-child(5) {
+  background: #295167;
+  width: 210px;
+  height: 210px;
+  margin-left: -105px;
+  margin-top: -105px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.arc:nth-child(6) {
+  background: #492245;
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  margin-top: -70px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.arc:nth-child(7) {
+  background: #FDFAD8;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  -webkit-clip-path: inset(50% 0 0 0);
+          clip-path: inset(50% 0 0 0);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#rainbow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 490px;
+  height: 490px;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+body {
+  background: #FDFAD8;
+  overflow: hidden;
+}

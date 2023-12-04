@@ -1,0 +1,263 @@
+.rainbow-preloader .rainbow-stripe:nth-child(1) {
+  border-color: #f15a5a;
+  clip: rect(0, 84px, 42px, 0);
+  height: 60px;
+  left: 48px;
+  -webkit-transform: rotate(180deg);
+  top: 48px;
+  width: 60px;
+  z-index: 5;
+  -webkit-animation: rainbow-in-out 5s 0.1s infinite;
+}
+.rainbow-preloader .rainbow-stripe:nth-child(1):before {
+  border: 3px solid #ed2b2b;
+  content: "";
+  display: block;
+  height: 48px;
+  width: 54px;
+}
+
+.rainbow-preloader .rainbow-stripe:nth-child(2) {
+  border-color: #f0c419;
+  clip: rect(0, 108px, 54px, 0);
+  height: 84px;
+  left: 36px;
+  -webkit-transform: rotate(180deg);
+  top: 36px;
+  width: 84px;
+  z-index: 4;
+  -webkit-animation: rainbow-in-out 5s 0.2s infinite;
+}
+.rainbow-preloader .rainbow-stripe:nth-child(2):before {
+  border: 3px solid #c9a20d;
+  content: "";
+  display: block;
+  height: 72px;
+  width: 78px;
+}
+
+.rainbow-preloader .rainbow-stripe:nth-child(3) {
+  border-color: #4eba6f;
+  clip: rect(0, 132px, 66px, 0);
+  height: 108px;
+  left: 24px;
+  -webkit-transform: rotate(180deg);
+  top: 24px;
+  width: 108px;
+  z-index: 3;
+  -webkit-animation: rainbow-in-out 5s 0.3s infinite;
+}
+.rainbow-preloader .rainbow-stripe:nth-child(3):before {
+  border: 3px solid #3c9958;
+  content: "";
+  display: block;
+  height: 96px;
+  width: 102px;
+}
+
+.rainbow-preloader .rainbow-stripe:nth-child(4) {
+  border-color: #2d95bf;
+  clip: rect(0, 156px, 78px, 0);
+  height: 132px;
+  left: 12px;
+  -webkit-transform: rotate(180deg);
+  top: 12px;
+  width: 132px;
+  z-index: 2;
+  -webkit-animation: rainbow-in-out 5s 0.4s infinite;
+}
+.rainbow-preloader .rainbow-stripe:nth-child(4):before {
+  border: 3px solid #237596;
+  content: "";
+  display: block;
+  height: 120px;
+  width: 126px;
+}
+
+.rainbow-preloader .rainbow-stripe:nth-child(5) {
+  border-color: #955ba5;
+  clip: rect(0, 180px, 90px, 0);
+  height: 156px;
+  left: 0px;
+  -webkit-transform: rotate(180deg);
+  top: 0px;
+  width: 156px;
+  z-index: 1;
+  -webkit-animation: rainbow-in-out 5s 0.5s infinite;
+}
+.rainbow-preloader .rainbow-stripe:nth-child(5):before {
+  border: 3px solid #774984;
+  content: "";
+  display: block;
+  height: 144px;
+  width: 150px;
+}
+
+.rainbow-preloader {
+  height: 90px;
+  left: 50%;
+  margin-left: -90px;
+  margin-top: -90px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 180px;
+}
+.rainbow-preloader:before, .rainbow-preloader:after {
+  background: linear-gradient(45deg, transparent 33.333%, #6b9903 33.333%, #6b9903 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #6b9903 33.333%, #6b9903 66.667%, transparent 66.667%);
+  background-size: 6px 34px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  width: 66px;
+  z-index: 10;
+}
+.rainbow-preloader:after {
+  left: auto;
+  right: 0;
+}
+.rainbow-preloader .rainbow-stripe {
+  border-width: 12px;
+  border-style: solid;
+  border-radius: 100%;
+  position: absolute;
+}
+.rainbow-preloader .rainbow-stripe:before {
+  border-radius: 100%;
+}
+.rainbow-preloader .shadow {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: -1px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  -webkit-animation: shadow-in-out 5s infinite;
+}
+.rainbow-preloader .shadow + .shadow {
+  left: 118px;
+  -webkit-animation-delay: 0.5s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.sky {
+  background: linear-gradient(#85a5cc 0, #d0e4f2 100%);
+  box-shadow: 0 0 20px #d0e4f2;
+  height: 44%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.sky .cloud {
+  background: #ebf5fc;
+  border-radius: 200px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  height: 39px;
+  margin-right: -102px;
+  position: absolute;
+  right: 0%;
+  width: 102px;
+}
+.sky .cloud.variant-1 {
+  top: 18%;
+  -webkit-transform: scale(0.2);
+  -webkit-animation: clouds-in-out 16s 0s infinite linear;
+}
+.sky .cloud.variant-2 {
+  top: 22%;
+  -webkit-transform: scale(0.4);
+  -webkit-animation: clouds-in-out 17s 2s infinite linear;
+}
+.sky .cloud.variant-3 {
+  top: 72%;
+  -webkit-transform: scale(0.6);
+  -webkit-animation: clouds-in-out 18s 4s infinite linear;
+}
+.sky .cloud.variant-4 {
+  top: 35%;
+  -webkit-transform: scale(0.8);
+  -webkit-animation: clouds-in-out 19s 6s infinite linear;
+}
+.sky .cloud.variant-5 {
+  top: 73%;
+  -webkit-transform: scale(1);
+  -webkit-animation: clouds-in-out 20s 8s infinite linear;
+}
+.sky .cloud:before, .sky .cloud:after {
+  background: #ebf5fc;
+  border-radius: 100px;
+  content: "";
+  height: 45px;
+  left: 10px;
+  position: absolute;
+  top: -10px;
+  width: 60px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.sky .cloud:after {
+  height: 60px;
+  left: auto;
+  right: 12px;
+  top: -24px;
+  width: 60px;
+}
+
+.ground {
+  background: linear-gradient(#6e9e03 0, #4f7302 100%);
+  height: 57%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@-webkit-keyframes rainbow-in-out {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  33% {
+    -webkit-transform: rotate(360deg);
+  }
+  66% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+  }
+}
+@-webkit-keyframes shadow-in-out {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  33% {
+    opacity: 1;
+    width: 60px;
+  }
+  66% {
+    opacity: 1;
+    width: 60px;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+@-webkit-keyframes clouds-in-out {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 105%;
+  }
+}
